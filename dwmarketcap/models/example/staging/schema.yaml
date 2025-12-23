@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: dbsalesaovivo_qckj
+    schema: public
+    tables:
+      - name: stg_commodities
+        description: "Tabela que contém dados de stg_commodities"
+        columns:
+          - name: data
+            description: "Data da observação"
+          - name: api_timestamp
+            description: "Data da observação dentro da API"
+          - name: Close
+            description: "Preço de fechamento da commodity em R$"
+          - name: simbolo
+            description: "Símbolo da commodity"
+          - name: moeda
+            description: "Moeda de referência do preço"

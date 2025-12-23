@@ -1,6 +1,6 @@
 #Constução de app de teste
 '''mermaid
-flowchart TD
+flowchart TD;
     A[Inicio] 
     A --> B[Definir lista de commodities]
     B --> C[Iniciar loop de simbolos]

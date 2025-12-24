@@ -1,5 +1,5 @@
 #Constução de app de teste
-'''mermaid
+```mermaid
 flowchart TD;
     A[Inicio] 
     A --> B[Definir lista de commodities]
@@ -15,4 +15,4 @@ flowchart TD;
     J --> K[Concatenar todos os DataFrames]
     K --> L[Salvar dados no PostgreSQL]
     L --> M[Fim]
-'''
+```

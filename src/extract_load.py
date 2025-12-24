@@ -13,7 +13,7 @@ from datetime import datetime
 
 load_dotenv()
 
-commodities = ['DOGE','ETH','BTC','XRP','LTC','BCH','ADA','SOL','DOT']
+commodities = ['DOGE', 'ETH', 'BTC', 'XRP', 'LTC', 'BCH', 'ADA', 'SOL', 'DOT']
 
 DB_HOST = os.getenv('DB_HOST_PROD')
 DB_PORT = os.getenv('DB_PORT_PROD')
@@ -85,7 +85,7 @@ def buscar_todos_dados_commodities(commodities):
 
 
 def salvar_no_postgres(df, schema='public'):
-    df.to_sql('commodities', engine, if_exists='replace',
+    df.to_sql('commodities', engine, if_exists='append',
               index=True, index_label='Date', schema=schema)
 
 
